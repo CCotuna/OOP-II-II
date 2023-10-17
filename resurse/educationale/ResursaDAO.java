@@ -17,10 +17,10 @@ public class ResursaDAO {
 		ps.setString(3, resursa.getNivel_educational());
 		
 		ps.executeUpdate();
-		System.out.println("1 Cube was created.");
+		System.out.println("Resursa a fost adaugata.");
 	}
 	
-	public static ArrayList<Resursa> getAllCubes() throws SQLException{
+	public static ArrayList<Resursa> getAllResources() throws SQLException{
 		ArrayList<Resursa> result = new ArrayList<Resursa>();
 		
 		Connection c = DBHelper.getConnection();
@@ -40,7 +40,7 @@ public class ResursaDAO {
 	
 	public static String delete(int id) throws SQLException {
 		Connection c = DBHelper.getConnection();
-		String deleteQuery = "delete from resurse_educaitonale where id = ?";
+		String deleteQuery = "delete from resurse_educationale where id = ?";
 		
 		PreparedStatement ps = c.prepareStatement(deleteQuery);
 		ps.setInt(1, id);

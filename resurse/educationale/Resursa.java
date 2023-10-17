@@ -11,7 +11,6 @@ public class Resursa {
 	}
 
 	public Resursa( String titlu, int dificultate_intelegere, String nivel_educational) {
-		super();
 		this.titlu = titlu;
 		this.dificultate_intelegere = dificultate_intelegere;
 		this.nivel_educational = nivel_educational;
